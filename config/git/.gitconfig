@@ -1,0 +1,14 @@
+[init]
+	defaultBranch = master
+
+[user]
+	name = Niapoll
+	email = Kolya21082001@gmail.com
+
+[core]
+	longpaths = true
+	autocrlf = input
+	editor = micro
+
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
