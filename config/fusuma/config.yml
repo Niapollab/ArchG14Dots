@@ -1,0 +1,11 @@
+pinch:
+  in:
+    sendkey: "LEFTCTRL+KPMINUS"
+  out:
+    sendkey: "LEFTCTRL+KPPLUS"
+
+threshold:
+  pinch: 0.8
+
+interval:
+  pinch: 0.4

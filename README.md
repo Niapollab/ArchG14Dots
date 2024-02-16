@@ -41,8 +41,9 @@ Pacman:
 AUR:
 * bibata-cursor-theme-bin - cursor theme
 * brave-bin - browser
+* ruby-fusuma - touchpad gestures manager
+* ruby-fusuma-plugin-sendkey - send keys plugin for fusuma config support
 * visual-studio-code-bin - GUI code editor
-
 
 ## Environment
 Bar: Waybar
