@@ -1,3 +1,14 @@
+swipe:
+  3:
+    up:
+      command: "hyprctl dispatch fullscreen 0"
+    down:
+      command: "hyprctl dispatch fullscreen 1"
+    left:
+      command: "hyprctl dispatch workspace +1"
+    right:
+      command: "hyprctl dispatch workspace -1"
+
 pinch:
   in:
     sendkey: "LEFTCTRL+KPMINUS"
@@ -5,7 +16,9 @@ pinch:
     sendkey: "LEFTCTRL+KPPLUS"
 
 threshold:
+  swipe: 0.4
   pinch: 0.8
 
 interval:
+  swipe: 0.8
   pinch: 0.4
