@@ -34,11 +34,20 @@ case "$1" in
     ;;
 
   zsh)
-    SOURCE="$SCRIPT_DIR/zsh/.zshrc"
-    TARGET="/home/`whoami`/.zshrc"
+    SOURCE="$SCRIPT_DIR/zsh"
+    TARGET="/home/`whoami`"
 
-    rm -rf "$TARGET"
-    ln -s "$SOURCE" "$TARGET"
+    RC_SOURCE="$SOURCE/.zshrc"
+    RC_TARGET="$TARGET/.zshrc"
+
+    ALIASES_SOURCE="$SOURCE/.zsh_aliases"
+    ALIASES_TARGET="$TARGET/.zsh_aliases"
+
+    rm -rf "$RC_TARGET"
+    ln -s "$RC_SOURCE" "$RC_TARGET"
+
+    rm -rf "$ALIASES_TARGET"
+    ln -s "$ALIASES_SOURCE" "$ALIASES_TARGET"
     ;;
 
   waybar)

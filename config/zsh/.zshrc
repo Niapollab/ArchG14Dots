@@ -99,8 +99,4 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias pacman-rm="sudo pacman -Runs"
-alias pacman-my="pacman -Qe"
-alias pacman-upgrade="sudo pacman -Syu --noconfirm"
-alias yay-upgrade="yay -Syu"
-alias upgrade="pacman-upgrade && yay-upgrade"
+. ~/.zsh_aliases

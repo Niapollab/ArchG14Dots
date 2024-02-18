@@ -1,0 +1,5 @@
+alias pacman-rm="sudo pacman -Runs"
+alias pacman-my="pacman -Qe"
+alias pacman-upgrade="sudo pacman -Syu --noconfirm"
+alias yay-upgrade="yay -Syu"
+alias upgrade="pacman-upgrade && yay-upgrade"
