@@ -41,6 +41,17 @@ case "$1" in
     ln -s "$SOURCE" "$TARGET"
     ;;
 
+  waybar)
+    SOURCE="$SCRIPT_DIR/waybar"
+    TARGET="/home/`whoami`/.config/waybar"
+
+    read -p "[@] Input keyboard name (use hyprctl devices): " KEYBOARD_NAME
+    echo "$KEYBOARD_NAME" > "$SOURCE/keyboard-name"
+
+    rm -rf "$TARGET"
+    ln -s "$SOURCE" "$TARGET"
+    ;;
+
   *)
     echo "[!] Unable to install config \"$1\"."
     exit 1

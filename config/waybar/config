@@ -1,0 +1,107 @@
+{
+	"layer": "top",
+	"position": "top",
+
+	"margin-top": 0,
+	"margin-right": 0,
+	"margin-bottom": 0,
+	"margin-left": 0,
+
+	"height": 14,
+
+	"modules-left": [
+		"custom/launcher",
+		"cpu",
+		"memory",
+		"network",
+		"tray"
+	],
+	"modules-center": [
+	],
+	"modules-right": [
+		"backlight",
+		"pulseaudio",
+		"battery",
+		"clock",
+		"hyprland/language"
+	],
+
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon}  {volume}%",
+		"format-muted": "{icon}  {volume}%",
+		"on-click": "pavucontrol",
+		"reverse-scrolling": true,
+		"format-icons": {
+			"default": [
+				"",
+				"",
+				""
+			]
+		}
+	},
+	"network": {
+		"format-wifi": "  {signalStrength}%",
+		"format-ethernet": "󰈀",
+		"tooltip-format": "{essid} ({signalStrength}%)",
+		"format-linked": "{ifname} (No IP) 󰈀",
+		"format-disconnected": "󰖪",
+		"format-alt": "{ifname}: {ipaddr}/{cidr}"
+	},
+	"backlight": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": " {}%",
+		"on-scroll-up": "xbacklight -inc 5",
+		"on-scroll-down": "test `xbacklight -get` -ge 15 && xbacklight -dec 5",
+		"reverse-scrolling": true
+	},
+	"battery": {
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 20
+		},
+		"format": "{icon}  {capacity}%",
+		"format-charging": "  {capacity}%",
+		"format-plugged": "  {capacity}%",
+		"format-alt": "{time} {icon}",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		]
+	},
+	"tray": {
+		"icon-size": 18,
+		"spacing": 10
+	},
+	"clock": {
+		"format": "{:  %H:%M}",
+		"format-alt": "{:󰃭 %d.%m.%Y}",
+		"tooltip-format": "<big>{:%d %B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+	},
+	"cpu": {
+		"interval": 15,
+		"format": "  {usage}%",
+		"max-length": 10
+	},
+	"memory": {
+		"interval": 30,
+		"format": "  {}%",
+		"max-length": 10
+	},
+	"hyrpland/workspaces": {
+		"format": "{icon}",
+		"on-scroll-up": "hyprctl dispatch workspace e+1",
+		"on-scroll-down": "hyprctl dispatch workspace e-1",
+		"on-click": "activate"
+	},
+	"hyprland/language": {
+		"format": "{shortDescription}",
+		"on-click": "hyprctl switchxkblayout $(cat /home/`whoami`/.config/waybar/keyboard-name) next"
+	}
+}
