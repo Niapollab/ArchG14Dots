@@ -1,11 +1,13 @@
 # Arch notes - Asus ROG Zephyrus G14 GA402XV
 
-
 ## Packages
+
 Pacman:
+
 * acpilight - brightness control
 * amd-ucode - patches for AMD processor
 * asusctl - Asus laptop device manager
+* cliphist - history clipboard manager
 * docker - containerization
 * dotnet-host - .NET version manager
 * dotnet-sdk - last .NET SDK
@@ -35,10 +37,12 @@ Pacman:
 * ttf-noto-nerd - Noto Nerd font
 * vlc - video and audio player
 * waybar - desktop bar
+* wl-clipboard - copy and paste command line utilities
 * wofi - launcher menu
 * yay - AUR manager
 
 AUR:
+
 * bibata-cursor-theme-bin - cursor theme
 * brave-bin - browser
 * ruby-fusuma - touchpad gestures manager
@@ -46,6 +50,7 @@ AUR:
 * visual-studio-code-bin - GUI code editor
 
 ## Environment
+
 Bar: Waybar
 
 Browser: Brave
@@ -57,5 +62,6 @@ Display manager: Sddm
 Launcher menu: Wofi
 
 Fonts:
+
 * Desktop: NotoSansM Nerd Font Regular 11pt
 * VSCode: FiraCode Nerd Font Mono Ret 14px
