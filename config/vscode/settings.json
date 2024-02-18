@@ -1,0 +1,18 @@
+{
+    // Theme
+    "workbench.colorTheme": "Lilac",
+
+    // MenuBar
+    "window.menuBarVisibility": "toggle",
+
+    // Font
+    "editor.fontSize": 14,
+    "editor.fontFamily": "FiraCode Nerd Font Mono Ret",
+    "editor.fontLigatures": true,
+
+    // Whitespaces
+    "files.trimTrailingWhitespace": true,
+
+    // Terminal
+    "terminal.external.linuxExec": "alacritty"
+}

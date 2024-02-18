@@ -52,6 +52,33 @@ case "$1" in
     ln -s "$SOURCE" "$TARGET"
     ;;
 
+  vscode)
+    SOURCE="$SCRIPT_DIR/vscode"
+    TARGET="/home/`whoami`/.config/Code/User"
+
+    SETTINGS_SOURCE="$SOURCE/settings.json"
+    SETTINGS_TARGET="$TARGET/settings.json"
+
+    KEYBINDINGS_SOURCE="$SOURCE/keybindings.json"
+    KEYBINDINGS_TARGET="$TARGET/keybindings.json"
+
+    SNIPPETS_SOURCE="$SOURCE/snippets"
+    SNIPPETS_TARGET="$TARGET/snippets"
+
+    EXTENSIONS="$SCRIPT_DIR/vscode/extensions.txt"
+
+    cat "$EXTENSIONS" | xargs -n 1 code --install-extension
+
+    rm -rf "$SETTINGS_TARGET"
+    ln -s "$SETTINGS_SOURCE" "$SETTINGS_TARGET"
+
+    rm -rf "$KEYBINDINGS_TARGET"
+    ln -s "$KEYBINDINGS_SOURCE" "$KEYBINDINGS_TARGET"
+
+    rm -rf "$SNIPPETS_TARGET"
+    ln -s "$SNIPPETS_SOURCE" "$SNIPPETS_TARGET"
+    ;;
+
   *)
     echo "[!] Unable to install config \"$1\"."
     exit 1
