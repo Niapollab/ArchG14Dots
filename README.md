@@ -38,13 +38,13 @@ Pacman:
 * vlc - video and audio player
 * waybar - desktop bar
 * wl-clipboard - copy and paste command line utilities
-* wofi - launcher menu
 * yay - AUR manager
 
 AUR:
 
 * bibata-cursor-theme-bin - cursor theme
 * brave-bin - browser
+* rofi-lbonn-wayland - launcher menu
 * ruby-fusuma - touchpad gestures manager
 * ruby-fusuma-plugin-sendkey - send keys plugin for fusuma config support
 * visual-studio-code-bin - GUI code editor
@@ -59,7 +59,7 @@ Desktop compositor: Hyprland
 
 Display manager: Sddm
 
-Launcher menu: Wofi
+Launcher menu: Rofi
 
 Fonts:
 
