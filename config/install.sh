@@ -88,6 +88,14 @@ case "$1" in
     ln -s "$SNIPPETS_SOURCE" "$SNIPPETS_TARGET"
     ;;
 
+  zsh-autosuggestions | zsh-syntax-highlighting)
+    SOURCE="/usr/share/zsh/plugins/$1"
+    TARGET="/home/`whoami`/.oh-my-zsh/plugins/$1"
+
+    rm -rf "$TARGET"
+    ln -s "$SOURCE" "$TARGET"
+    ;;
+
   *)
     echo "[!] Unable to install config \"$1\"."
     exit 1

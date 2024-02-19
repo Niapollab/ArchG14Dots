@@ -41,6 +41,10 @@
 * waybar - desktop bar
 * wl-clipboard - copy and paste command line utilities
 * yay - AUR manager
+* zsh - shell
+* zsh-completions - additional completion definitions
+* zsh-autosuggestions - autosuggestions for shell
+* zsh-syntax-highlighting - syntax highlighting for shell
 
 ### AUR
 
@@ -52,6 +56,10 @@
 * ruby-fusuma-plugin-sendkey - send keys plugin for fusuma config support
 * visual-studio-code-bin - GUI code editor
 * wttrbar-git - module for showing the weather in Waybar
+
+### Custom
+
+* [Oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/)
 
 ## Environment
 
