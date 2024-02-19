@@ -26,6 +26,8 @@
 * noto-fonts-emoji - emoji support
 * nwg-look - theme editor for GTK
 * pavucontrol - GUI pulseaudio manager
+* polkit - toolkit for controlling system-wide privileges
+* polkit-gnome - GUI agent for toolkit
 * pyenv - Python version manager
 * rog-control-center - GUI for asusctl
 * sddm - desktop display manager
@@ -42,6 +44,7 @@
 
 ### AUR
 
+* ayugram-desktop-bin - Telegram client
 * bibata-cursor-theme-bin - cursor theme
 * brave-bin - browser
 * rofi-lbonn-wayland - launcher menu
