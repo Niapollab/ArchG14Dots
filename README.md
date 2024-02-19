@@ -2,7 +2,7 @@
 
 ## Packages
 
-Pacman:
+### Pacman
 
 * acpilight - brightness control
 * amd-ucode - patches for AMD processor
@@ -40,7 +40,7 @@ Pacman:
 * wl-clipboard - copy and paste command line utilities
 * yay - AUR manager
 
-AUR:
+### AUR
 
 * bibata-cursor-theme-bin - cursor theme
 * brave-bin - browser
@@ -65,3 +65,27 @@ Fonts:
 
 * Desktop: NotoSansM Nerd Font Regular 11pt
 * VSCode: FiraCode Nerd Font Mono Ret 14px
+
+## Start OOM Killer service
+
+OOM Killer service isn't started by default. Use to start it manually:
+
+```shell
+systemctl enable --now systemd-oomd.service
+```
+
+## Limit CPU
+
+You can limit CPUs for some processes (for example for `yay`):
+
+```shell
+numactl --physcpubind=0-7 <process name and arguments>
+```
+
+## Fix Rofi drun execution issues
+
+You can modify application `.desktop` file for custom launch parameters. Use it to find all of them:
+
+```shell
+find / -name "*.desktop" 2>/dev/null
+```
