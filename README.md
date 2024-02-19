@@ -48,6 +48,7 @@
 * ruby-fusuma - touchpad gestures manager
 * ruby-fusuma-plugin-sendkey - send keys plugin for fusuma config support
 * visual-studio-code-bin - GUI code editor
+* wttrbar-git - module for showing the weather in Waybar
 
 ## Environment
 

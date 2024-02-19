@@ -22,6 +22,7 @@
 		"backlight",
 		"pulseaudio",
 		"battery",
+		"custom/weather",
 		"clock",
 		"hyprland/language"
 	],
@@ -103,5 +104,12 @@
 	"hyprland/language": {
 		"format": "{shortDescription}",
 		"on-click": "hyprctl switchxkblayout $(cat /home/`whoami`/.config/waybar/keyboard-name) next"
+	},
+	"custom/weather": {
+		"format": "{}°",
+		"tooltip": true,
+		"interval": 18000,
+		"exec": "wttrbar",
+		"return-type": "json"
 	}
 }
