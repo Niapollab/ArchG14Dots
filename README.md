@@ -7,6 +7,9 @@
 * acpilight - brightness control
 * amd-ucode - patches for AMD processor
 * asusctl - Asus laptop device manager
+* blueman - GUI Bluetooth manager
+* bluez - Bluetooth protocol
+* bluez-utils - Bluetooth manager
 * cliphist - history clipboard manager
 * docker - containerization
 * dotnet-host - .NET version manager
@@ -26,8 +29,10 @@
 * noto-fonts-emoji - emoji support
 * nwg-look - theme editor for GTK
 * pavucontrol - GUI pulseaudio manager
-* polkit - toolkit for controlling system-wide privileges
-* polkit-gnome - GUI agent for toolkit
+* polkit-gnome - GUI agent for for controlling system-wide privileges
+* pulseaudio - sound server
+* pulseaudio-alsa - kernel level sound mixer support
+* pulseaudio-bluetooth - Bluetooth headphones support
 * pyenv - Python version manager
 * rog-control-center - GUI for asusctl
 * sddm - desktop display manager
@@ -42,8 +47,8 @@
 * wl-clipboard - copy and paste command line utilities
 * yay - AUR manager
 * zsh - shell
-* zsh-completions - additional completion definitions
 * zsh-autosuggestions - autosuggestions for shell
+* zsh-completions - additional completion definitions
 * zsh-syntax-highlighting - syntax highlighting for shell
 
 ### AUR
@@ -73,6 +78,8 @@ Display manager: Sddm
 
 Launcher menu: Rofi
 
+Audio system: PulseAudio
+
 Fonts:
 
 * Desktop: NotoSansM Nerd Font Regular 11pt
@@ -100,4 +107,12 @@ You can modify application `.desktop` file for custom launch parameters. Use it 
 
 ```shell
 find / -name "*.desktop" 2>/dev/null
+```
+
+## Bluetooth service
+
+Bluetooth service isn't started by default. Use to start it manually:
+
+```shell
+systemctl enable --now bluetooth.service
 ```
