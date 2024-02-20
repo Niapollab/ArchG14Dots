@@ -5,8 +5,11 @@
 ### Pacman
 
 * acpilight - brightness control
+* alacritty - pseudoterminal emulator
 * amd-ucode - patches for AMD processor
 * asusctl - Asus laptop device manager
+* base - minimal package set to define a basic Arch Linux installation
+* base-devel - basic tools to build Arch Linux packages
 * blueman - GUI Bluetooth manager
 * bluez - Bluetooth protocol
 * bluez-utils - Bluetooth manager
@@ -21,6 +24,9 @@
 * hyprland - tiling desktop compositor
 * hyprpaper - wallpaper manager
 * less - pagination provider
+* linux-firmware - firmware files for Linux
+* linux-g14 - custom Asus G14 linux kernel
+* linux-g14-headers - custom Asus G14 linux kernel headers
 * micro - CLI code editor
 * nemo - file manager
 * neofetch - rice information about system
