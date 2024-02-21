@@ -27,6 +27,7 @@
 * linux-firmware - firmware files for Linux
 * linux-g14 - custom Asus G14 linux kernel
 * linux-g14-headers - custom Asus G14 linux kernel headers
+* mako - notifications support
 * micro - CLI code editor
 * nemo - file manager
 * neofetch - rice information about system
@@ -96,6 +97,8 @@ Launcher menu: Rofi
 
 Audio system: PulseAudio
 
+Notifications: Mako
+
 Fonts:
 
 * Desktop: NotoSansM Nerd Font Regular 11pt
@@ -115,4 +118,28 @@ You can modify application `.desktop` file for custom launch parameters. Use it 
 
 ```shell
 find / -name "*.desktop" 2>/dev/null
+```
+
+## Make global GTK theme configurable
+
+1. Add user to `theme` group:
+
+```shell
+sudo groupadd theme
+sudo usermod -a -G theme `whoami`
+```
+
+2. Restart user session to apply changes
+
+3. Make global theme configurable:
+
+```shell
+sudo chown :theme /usr/share/icons/default/index.theme
+sudo chmod g+w /usr/share/icons/default/index.theme
+```
+
+4. Create symbolic link to user space:
+```shell
+mkdir -p "/home/`whoami`/.icons/default/"
+ln -s "/usr/share/icons/default/index.theme" "/home/`whoami`/.icons/default/index.theme"
 ```

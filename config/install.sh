@@ -96,6 +96,14 @@ case "$1" in
     ln -s "$SOURCE" "$TARGET"
     ;;
 
+  mako)
+    SOURCE="$SCRIPT_DIR/mako"
+    TARGET="/home/`whoami`/.config/mako"
+
+    rm -rf "$TARGET"
+    ln -s "$SOURCE" "$TARGET"
+    ;;
+
   *)
     echo "[!] Unable to install config \"$1\"."
     exit 1
