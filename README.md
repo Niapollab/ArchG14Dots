@@ -52,6 +52,7 @@
 * waybar - desktop bar
 * wl-clipboard - copy and paste command line utilities
 * yay - AUR manager
+* zerotier-one - VPN throw network utility
 * zsh - shell
 * zsh-autosuggestions - autosuggestions for shell
 * zsh-completions - additional completion definitions
@@ -72,6 +73,15 @@
 
 * [Oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/)
 
+## Services
+
+* bluetooth.service - Bluetooth service
+* docker.service - Docker service
+* NetworkManager.service - NetworkManager service
+* sddm.service - SDDM Service
+* sshd.service - SSH Server service
+* systemd-oomd.service - OOM killer service
+
 ## Environment
 
 Bar: Waybar
@@ -91,14 +101,6 @@ Fonts:
 * Desktop: NotoSansM Nerd Font Regular 11pt
 * VSCode: FiraCode Nerd Font Mono Ret 14px
 
-## Start OOM Killer service
-
-OOM Killer service isn't started by default. Use to start it manually:
-
-```shell
-systemctl enable --now systemd-oomd.service
-```
-
 ## Limit CPU
 
 You can limit CPUs for some processes (for example for `yay`):
@@ -113,12 +115,4 @@ You can modify application `.desktop` file for custom launch parameters. Use it 
 
 ```shell
 find / -name "*.desktop" 2>/dev/null
-```
-
-## Bluetooth service
-
-Bluetooth service isn't started by default. Use to start it manually:
-
-```shell
-systemctl enable --now bluetooth.service
 ```
