@@ -14,6 +14,7 @@
 * bluez - Bluetooth protocol
 * bluez-utils - Bluetooth manager
 * cliphist - history clipboard manager
+* discord - game messenger
 * docker - containerization
 * dotnet-host - .NET version manager
 * dotnet-sdk - last .NET SDK
@@ -41,6 +42,7 @@
 * pulseaudio-alsa - kernel level sound mixer support
 * pulseaudio-bluetooth - Bluetooth headphones support
 * pyenv - Python version manager
+* rofi-emoji - emoji picker for Rofi
 * rog-control-center - GUI for asusctl
 * sddm - desktop display manager
 * streamlink - media downloader
@@ -51,6 +53,7 @@
 * ttf-noto-nerd - Noto Nerd font
 * vlc - video and audio player
 * waybar - desktop bar
+* wev - key codes provider
 * wl-clipboard - copy and paste command line utilities
 * yay - AUR manager
 * zerotier-one - VPN throw network utility
