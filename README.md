@@ -36,11 +36,12 @@
 * noto-fonts-cjk - asian symbols support
 * noto-fonts-emoji - emoji support
 * nwg-look - theme editor for GTK
-* pavucontrol - GUI pulseaudio manager
+* pavucontrol - GUI pipewire manager
 * polkit-gnome - GUI agent for for controlling system-wide privileges
-* pulseaudio - sound server
-* pulseaudio-alsa - kernel level sound mixer support
-* pulseaudio-bluetooth - Bluetooth headphones support
+* pipewire - sound server
+* pipewire-alsa - kernel level sound mixer support
+* pipewire-audio - Bluetooth headphones support
+* pipewire-pulse - integration with PulseAudio API
 * pyenv - Python version manager
 * rofi-emoji - emoji picker for Rofi
 * rog-control-center - GUI for asusctl
@@ -98,7 +99,7 @@ Display manager: Sddm
 
 Launcher menu: Rofi
 
-Audio system: PulseAudio
+Audio system: PipeWire
 
 Notifications: Mako
 
