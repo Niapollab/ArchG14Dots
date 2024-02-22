@@ -14,7 +14,6 @@
 * bluez - Bluetooth protocol
 * bluez-utils - Bluetooth manager
 * cliphist - history clipboard manager
-* discord - game messenger
 * docker - containerization
 * dotnet-host - .NET version manager
 * dotnet-sdk - last .NET SDK
@@ -36,12 +35,13 @@
 * noto-fonts-cjk - asian symbols support
 * noto-fonts-emoji - emoji support
 * nwg-look - theme editor for GTK
+* obs - video and audio recording
 * pavucontrol - GUI pipewire manager
-* polkit-gnome - GUI agent for for controlling system-wide privileges
 * pipewire - sound server
 * pipewire-alsa - kernel level sound mixer support
 * pipewire-audio - Bluetooth headphones support
 * pipewire-pulse - integration with PulseAudio API
+* polkit-gnome - GUI agent for for controlling system-wide privileges
 * pyenv - Python version manager
 * rofi-emoji - emoji picker for Rofi
 * rog-control-center - GUI for asusctl
@@ -56,6 +56,7 @@
 * waybar - desktop bar
 * wev - key codes provider
 * wl-clipboard - copy and paste command line utilities
+* xdg-desktop-portal-hyprland - allows screen sharing features
 * yay - AUR manager
 * zerotier-one - VPN throw network utility
 * zsh - shell
@@ -72,6 +73,7 @@
 * ruby-fusuma - touchpad gestures manager
 * ruby-fusuma-plugin-sendkey - send keys plugin for fusuma config support
 * visual-studio-code-bin - GUI code editor
+* webcord - Discord with share screen ability
 * wttrbar-git - module for showing the weather in Waybar
 
 ### Custom
