@@ -149,3 +149,27 @@ sudo chmod g+w /usr/share/icons/default/index.theme
 mkdir -p "/home/`whoami`/.icons/default/"
 ln -s "/usr/share/icons/default/index.theme" "/home/`whoami`/.icons/default/index.theme"
 ```
+
+## Install text shrug to global rofi-emojis
+
+1. Add user to `theme` group:
+
+```shell
+sudo groupadd theme
+sudo usermod -a -G theme `whoami`
+```
+
+2. Restart user session to apply changes
+
+3. Make global emojis configurable:
+
+```shell
+sudo chown :theme /usr/share/rofi-emoji/all_emojis.txt
+sudo chmod g+w /usr/share/rofi-emoji/all_emojis.txt
+```
+
+4. Install custom shrug emoji for the srofi-emoji package:
+
+```shell
+echo "¯\_(ツ)_/¯	Plain text	plain-text	shrug	text | shrugging | shrug" >> /usr/share/rofi-emoji/all_emojis.txt
+```
