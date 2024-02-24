@@ -29,6 +29,15 @@ case "$1" in
     SOURCE="$SCRIPT_DIR/git/.gitconfig"
     TARGET="/home/`whoami`/.gitconfig"
 
+    read -p "[@] Specify username: " GIT_USERNAME
+    sed -i "s#\(name\s*=\s*\).*#\1$GIT_USERNAME#g" "$SOURCE"
+
+    read -p "[@] Specify username: " GIT_EMAIL
+    sed -i "s#\(email\s*=\s*\).*#\1$GIT_EMAIL#g" "$SOURCE"
+
+    read -p "[@] Specify path to public key (use ssh-keygen): " GIT_PRIVATE_KEY
+    sed -i "s#\(signingKey\s*=\s*\).*#\1$GIT_PRIVATE_KEY#g" "$SOURCE"
+
     rm -rf "$TARGET"
     ln -s "$SOURCE" "$TARGET"
     ;;

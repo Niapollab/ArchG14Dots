@@ -2,8 +2,9 @@
 	defaultBranch = master
 
 [user]
-	name = Niapoll
-	email = Kolya21082001@gmail.com
+	name = XXX
+	email = XXX
+	signingKey = XXX
 
 [core]
 	longpaths = true
@@ -16,3 +17,12 @@
 
 [push]
 	autoSetupRemote = true
+
+[gpg]
+	format = ssh
+
+[commit]
+	gpgSign = true
+
+[tag]
+	gpgSign = true
