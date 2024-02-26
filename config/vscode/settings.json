@@ -14,5 +14,10 @@
     "files.trimTrailingWhitespace": true,
 
     // Terminal
-    "terminal.external.linuxExec": "alacritty"
+    "terminal.external.linuxExec": "alacritty",
+
+    // SSH
+    "remote.SSH.remotePlatform": {
+        "work": "windows"
+    }
 }
