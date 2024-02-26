@@ -56,6 +56,7 @@
 * waybar - desktop bar
 * wev - key codes provider
 * wl-clipboard - copy and paste command line utilities
+* xdg-desktop-portal-gtk - enable filechooser for gnome apps
 * xdg-desktop-portal-hyprland - allows screen sharing features
 * yay - AUR manager
 * zerotier-one - VPN throw network utility
@@ -69,6 +70,8 @@
 * ayugram-desktop-bin - Telegram client
 * bibata-cursor-theme-bin - cursor theme
 * brave-bin - browser
+* imhex - hex editor
+* p7zip-gui - 7Zip GUI
 * rofi-lbonn-wayland - launcher menu
 * ruby-fusuma - touchpad gestures manager
 * ruby-fusuma-plugin-sendkey - send keys plugin for fusuma config support
@@ -130,46 +133,47 @@ find / -name "*.desktop" 2>/dev/null
 
 1. Add user to `theme` group:
 
-```shell
-sudo groupadd theme
-sudo usermod -a -G theme `whoami`
-```
+    ```shell
+    sudo groupadd theme
+    sudo usermod -a -G theme `whoami`
+    ```
 
 2. Restart user session to apply changes
 
 3. Make global theme configurable:
 
-```shell
-sudo chown :theme /usr/share/icons/default/index.theme
-sudo chmod g+w /usr/share/icons/default/index.theme
-```
+    ```shell
+    sudo chown :theme /usr/share/icons/default/index.theme
+    sudo chmod g+w /usr/share/icons/default/index.theme
+    ```
 
 4. Create symbolic link to user space:
-```shell
-mkdir -p "/home/`whoami`/.icons/default/"
-ln -s "/usr/share/icons/default/index.theme" "/home/`whoami`/.icons/default/index.theme"
-```
+
+    ```shell
+    mkdir -p "/home/`whoami`/.icons/default/"
+    ln -s "/usr/share/icons/default/index.theme" "/home/`whoami`/.icons/default/index.theme"
+    ```
 
 ## Install text shrug to global rofi-emojis
 
 1. Add user to `theme` group:
 
-```shell
-sudo groupadd theme
-sudo usermod -a -G theme `whoami`
-```
+    ```shell
+    sudo groupadd theme
+    sudo usermod -a -G theme `whoami`
+    ```
 
 2. Restart user session to apply changes
 
 3. Make global emojis configurable:
 
-```shell
-sudo chown :theme /usr/share/rofi-emoji/all_emojis.txt
-sudo chmod g+w /usr/share/rofi-emoji/all_emojis.txt
-```
+    ```shell
+    sudo chown :theme /usr/share/rofi-emoji/all_emojis.txt
+    sudo chmod g+w /usr/share/rofi-emoji/all_emojis.txt
+    ```
 
 4. Install custom shrug emoji for the srofi-emoji package:
 
-```shell
-echo "¯\_(ツ)_/¯	Plain text	plain-text	shrug	text | shrugging | shrug" >> /usr/share/rofi-emoji/all_emojis.txt
-```
+    ```shell
+    echo "¯\_(ツ)_/¯\tPlain text\tplain-text\tshrug\ttext | shrugging | shrug" >> /usr/share/rofi-emoji/all_emojis.txt
+    ```
