@@ -7,6 +7,7 @@
 * acpilight - brightness control
 * alacritty - pseudoterminal emulator
 * amd-ucode - patches for AMD processor
+* android-tools - adb and fastboot support
 * asusctl - Asus laptop device manager
 * base - minimal package set to define a basic Arch Linux installation
 * base-devel - basic tools to build Arch Linux packages
