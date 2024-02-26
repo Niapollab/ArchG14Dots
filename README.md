@@ -71,11 +71,13 @@
 * ayugram-desktop-bin - Telegram client
 * bibata-cursor-theme-bin - cursor theme
 * brave-bin - browser
+* ghidra.desktop - reverse-engineering tool
 * imhex - hex editor
 * p7zip-gui - 7Zip GUI
 * rofi-lbonn-wayland - launcher menu
 * ruby-fusuma - touchpad gestures manager
 * ruby-fusuma-plugin-sendkey - send keys plugin for fusuma config support
+* stegsolve - steganographic image analyzer
 * visual-studio-code-bin - GUI code editor
 * webcord - Discord with share screen ability
 * wttrbar-git - module for showing the weather in Waybar
