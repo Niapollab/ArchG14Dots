@@ -177,3 +177,23 @@ find / -name "*.desktop" 2>/dev/null
     ```shell
     echo "¯\_(ツ)_/¯\tPlain text\tplain-text\tshrug\ttext | shrugging | shrug" >> /usr/share/rofi-emoji/all_emojis.txt
     ```
+
+## Change the default terminal emulator for Nemo to alacritty
+
+gnome-terminal is set as the default, if it is not installed, neither the "Open in terminal" context menu entry feature will not work, nor shell scripts or terminal applications will not run from Nemo.
+
+You can change the default setting with gsettings to the alacritty.
+
+```shell
+gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
+```
+
+### Make Docker volume accessible for Linux local user
+
+1. Set a custom rights mask for the volume directory:
+
+    ```shell
+    setfacl -d -m g::rwx /<volume directory>
+    ```
+
+2. Launch the container with flag `--user :$(id -g)`.
