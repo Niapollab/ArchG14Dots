@@ -22,6 +22,7 @@
 * gimp - raster image editor
 * git - system of version controlling
 * gnome-themes-extra - external gnome themes
+* grim - screenshots utility
 * hyprland - tiling desktop compositor
 * hyprpaper - wallpaper manager
 * less - pagination provider
@@ -47,6 +48,7 @@
 * rofi-emoji - emoji picker for Rofi
 * rog-control-center - GUI for asusctl
 * sddm - desktop display manager
+* slurp - choose monitor region utility
 * streamlink - media downloader
 * sudo - superuser manager
 * supergfxctl - GPU switcher
